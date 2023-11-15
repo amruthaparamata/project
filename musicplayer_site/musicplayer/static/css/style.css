@@ -1,0 +1,130 @@
+/* Add this to your styles.css */
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: white; /* Spotify dark background */
+    color: black;
+    margin: 0;
+    padding-top: 50px; /* Adjust based on your header/nav-bar if you have one */
+}
+
+.album-container {
+    text-align: center;
+    padding-bottom: 120px; /* Adjust the padding to fit the player height */
+}
+
+.album-artwork img {
+    max-width: 15%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 60px rgba(0,0,0,0.5);
+}
+
+.album-info {
+    margin: 20px 0;
+}
+/* styles.css */
+
+/* ... (other CSS styles) ... */
+
+.song-list ul {
+    /* center */
+    margin: 0 auto;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 70%;
+}
+
+.song-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 3px solid #ccc;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+
+.song-image {
+    width: 50px; /* Adjust the size as needed */
+    height: 50px; /* Adjust the size as needed */
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.song-title {
+    flex-grow: 1;
+}
+
+.song-duration {
+    margin-left: 10px;
+}
+
+/* ... (the rest of your CSS) ... */
+
+.song-list li:hover {
+    background-color: hsla(0,0%,100%,.1);
+}
+
+/* Style the audio player */
+audio {
+    width: 100%; /* Make the audio player take the full width of its container */
+    max-width: 600px; /* Set a max-width for larger screens */
+    margin: auto; /* This will center the audio player */
+}
+
+.player-controls {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: pink;
+    padding: 10px 0;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.5);
+    z-index: 100;
+}
+
+.player-controls button {
+    background: none;
+    border: none;
+    color: black;
+    margin: 0 10px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.player-controls button:hover {
+    color: black;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.song-thumb {
+    width: 50px; /* Adjust as needed */
+    height: 50px; /* Adjust as needed */
+    margin-right: 10px;
+}
+
+.now-playing {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.now-playing img {
+    width: 75px; /* Adjust as needed */
+    height: 75px; /* Adjust as needed */
+    margin-right: 20px;
+}
